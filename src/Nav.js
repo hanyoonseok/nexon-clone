@@ -5,7 +5,7 @@ export default function Nav(){
     return (
         <nav className="nav-container">
             <div className="nav-menu">
-                <i className="fas fa-bars"></i> 메뉴
+                <i className="fas fa-bars"> 메뉴</i>
             </div>
             <div className="nav-title">
                 NEXON
