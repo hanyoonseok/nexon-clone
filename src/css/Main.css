@@ -1,0 +1,33 @@
+.main-container{
+    width:100%;
+}
+.main-screen{
+    background-image: url("../sources/main.jpg");
+    background-repeat:no-repeat;
+    background-size:cover; 
+    height:450px;
+}
+.sub-screen{
+    padding:45px 120px;
+}
+.rec-title{
+    display:flex;
+    justify-content: space-between;
+}
+.rec-title-small ul{
+    display:flex;
+}
+.rec-cards-list{
+    display:flex;
+}
+.rec-cards{
+    width:150px;
+    height:340px;
+    background-color: black;
+    margin-right: 10px;
+}
+.rec-login-card{
+    width:465px;
+    height:340px;
+    background-color: black;
+}
