@@ -29,7 +29,9 @@ export default function Main(){
                     </div>
                     <div className="rec-cards-list">
                         <div className="rec-cards">
-                            <img src="sources/kart.jpg"/>
+                            <div className="img-wrap">
+                                <img src="sources/kart.jpg"/>
+                            </div>
                             <div className="rec-cards-detail">
                                 <div>
                                     <div className="rec-cards-rec">추천</div>
@@ -39,7 +41,9 @@ export default function Main(){
                             </div>
                         </div>
                         <div className="rec-cards">
-                            <img src="sources/sudden.png"/>
+                            <div className="img-wrap">
+                                <img src="sources/sudden.png"/>
+                            </div>
                             <div className="rec-cards-detail">
                                 <div>
                                     <div className="rec-cards-rec">추천</div>
@@ -49,7 +53,9 @@ export default function Main(){
                             </div>
                         </div>
                         <div className="rec-cards">
-                            <img src="sources/fifa.jpg"/>
+                            <div className="img-wrap">
+                                <img src="sources/fifa.jpg"/>
+                            </div>
                             <div className="rec-cards-detail">
                                 <div>
                                     <div className="rec-cards-rec">추천</div>
@@ -59,7 +65,9 @@ export default function Main(){
                             </div>
                         </div>
                         <div className="rec-cards">
-                            <img src="sources/cheon.jpg"/>
+                            <div className="img-wrap">
+                                <img src="sources/cheon.jpg"/>
+                            </div>
                             <div className="rec-cards-detail">
                                 <div>
                                     <div className="rec-cards-rec">추천</div>
@@ -69,7 +77,9 @@ export default function Main(){
                             </div>
                         </div>
                         <div className="rec-cards">
-                            <img src="sources/deon.jpg"/>
+                            <div className="img-wrap">
+                                <img src="sources/deon.jpg"/>
+                            </div>
                             <div className="rec-cards-detail">
                                 <div>
                                     <div className="rec-cards-rec">추천</div>

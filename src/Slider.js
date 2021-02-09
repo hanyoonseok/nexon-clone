@@ -9,7 +9,7 @@ export default function simpleSlider(){
         infinite: true,
         speed: 300,
         slidesToShow: 5,
-        slidesToScroll: 1,
+        slidesToScroll: 5,
         cssEase:"linear",
         className:"slides",
         draggable:false,
@@ -27,6 +27,11 @@ export default function simpleSlider(){
                     <button className="slide-btn">8</button>
                     <button className="slide-btn">9</button>
                     <button className="slide-btn">10</button>
+                    <button className="slide-btn">11</button>
+                    <button className="slide-btn">12</button>
+                    <button className="slide-btn">13</button>
+                    <button className="slide-btn">14</button>
+                    <button className="slide-btn">15</button>
             </Slider>
         </div>
     )
