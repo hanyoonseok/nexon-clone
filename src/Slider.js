@@ -16,6 +16,36 @@ export default function simpleSlider(){
     return(
         <div className="slider-container">
             <Slider {...settings}>
+                <div className="slide-card">
+                    <button className="slide-btn"></button>
+                    <span></span>
+                    <div className="slide-btn-title">크레이지 아케이드</div>
+                    <div className="slide-btn-detail">나비 커플링 만들기aaaaaaaaaaaa</div>
+                </div>
+                <div className="slide-card">
+                    <button className="slide-btn"></button>
+                    <span></span>
+                    <div className="slide-btn-title">크레이지 아케이드</div>
+                    <div className="slide-btn-detail">나비 커플링 만들기aaaaaaaaaaaa</div>
+                </div>
+                <div className="slide-card">
+                    <button className="slide-btn"></button>
+                    <span></span>
+                    <div className="slide-btn-title">크레이지 아케이드</div>
+                    <div className="slide-btn-detail">나비 커플링 만들기aaaaaaaaaaaa</div>
+                </div>
+                <div className="slide-card">
+                    <button className="slide-btn"></button>
+                    <span></span>
+                    <div className="slide-btn-title">크레이지 아케이드</div>
+                    <div className="slide-btn-detail">나비 커플링 만들기aaaaaaaaaaaa</div>
+                </div>
+                <div className="slide-card">
+                    <button className="slide-btn"></button>
+                    <span></span>
+                    <div className="slide-btn-title">크레이지 아케이드</div>
+                    <div className="slide-btn-detail">나비 커플링 만들기aaaaaaaaaaaa</div>
+                </div>
                     <button className="slide-btn">
                         <span></span>
                         <div className="slide-btn-title">크레이지 아케이드 <br/></div>

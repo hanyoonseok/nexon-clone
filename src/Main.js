@@ -30,7 +30,7 @@ export default function Main(){
                     <div className="rec-cards-list">
                         <div className="rec-cards">
                             <div className="img-wrap">
-                                <img src="sources/kart.jpg"/>
+                                <img alt="" src="sources/kart.jpg"/>
                             </div>
                             <div className="rec-cards-detail">
                                 <div>
@@ -42,7 +42,7 @@ export default function Main(){
                         </div>
                         <div className="rec-cards">
                             <div className="img-wrap">
-                                <img src="sources/sudden.png"/>
+                                <img alt="" src="sources/sudden.png"/>
                             </div>
                             <div className="rec-cards-detail">
                                 <div>
@@ -54,7 +54,7 @@ export default function Main(){
                         </div>
                         <div className="rec-cards">
                             <div className="img-wrap">
-                                <img src="sources/fifa.jpg"/>
+                                <img alt="" src="sources/fifa.jpg"/>
                             </div>
                             <div className="rec-cards-detail">
                                 <div>
@@ -66,7 +66,7 @@ export default function Main(){
                         </div>
                         <div className="rec-cards">
                             <div className="img-wrap">
-                                <img src="sources/cheon.jpg"/>
+                                <img alt="" src="sources/cheon.jpg"/>
                             </div>
                             <div className="rec-cards-detail">
                                 <div>
@@ -78,7 +78,7 @@ export default function Main(){
                         </div>
                         <div className="rec-cards">
                             <div className="img-wrap">
-                                <img src="sources/deon.jpg"/>
+                                <img alt="" src="sources/deon.jpg"/>
                             </div>
                             <div className="rec-cards-detail">
                                 <div>
@@ -92,8 +92,8 @@ export default function Main(){
                             <div className="rec-login-container">
                                 <button className="b1">NEXON ID 로그인</button>
                                 <div className="rec-login-special">
-                                    <button style={{width:'173px', height:'50px'}}>일회용 로그인</button>
-                                    <button style={{width:'173px', height:'50px'}}>QR 로그인</button>
+                                    <button>일회용 로그인</button>
+                                    <button >QR 로그인</button>
                                 </div>
                             </div>
                             <div className="rec-login-lists">
@@ -104,12 +104,11 @@ export default function Main(){
                                     <li class="fab fa-apple"></li>
                                 </ul>
                             </div>
-                            <div>
-                                <ul>
-                                    <li>넥슨id찾기</li>
-                                    <li>비밀번호찾기</li>
-                                    <li>회원가입</li>
-                                </ul>
+                            <div className="rec-service">
+                                <div>
+                                    <span>넥슨 ID찾기</span><span>비밀번호 찾기</span>
+                                </div>
+                                <div>회원가입</div>
                             </div>
                         </div>
                     </div>
@@ -117,7 +116,7 @@ export default function Main(){
                 <div className="game-all">
                     <div className="all-title">
                         <div>
-                            <div>전체게임</div>
+                            <div className="all-title-title">전체게임</div>
                             <div>
                                 <button></button>
                                 <button></button>
@@ -128,49 +127,118 @@ export default function Main(){
                         </div>
                     </div>
                     <div className="all-tag">
-                        <div>#asd</div>
-                        <div>#asd</div>
-                        <div>#asd</div>
-                        <div>#asd</div>
-                        <div>#asd</div>
-                        <div>#asd</div>
-                        <div>#asd</div>
-                        <div>#asd</div>
-                        <div>#asd</div>
-                        <div>#asd</div>
+                        <input type="radio" id="all"/><label for="all">#전체</label>
+                        <input type="radio" id="all"/><label for="all">#전체</label>
+                        <input type="radio" id="all"/><label for="all">#전체</label>
+                        <input type="radio" id="all"/><label for="all">#전체</label>
+                        <input type="radio" id="all"/><label for="all">#전체</label>
+                        <input type="radio" id="all"/><label for="all">#전체</label>
+                        <input type="radio" id="all"/><label for="all">#전체</label>
                     </div>
                     <div className="all-pc">
                         <div className="all-pc-title">
-                            <i>PC게임</i>
-                            <i>모바일게임</i>
+                            <span style={{color:'#4a4e57'}}>PC게임</span>
+                            <span className="pc-mob">모바일게임</span>
                         </div>
                         <div className="all-pc-cards">
-                            <div className="card-list">
-                                <div className="pc-card">
-
+                            <div className="all-card-list">
+                                <div className="all-pc-card">
+                                    <div className="card-img">
+                                        <img alt="" src="sources/v4.jpg"/>
+                                    </div>
+                                    <div className="card-info">
+                                        <div className="card-title"><span>V4</span><span><i class="fas fa-coffee"></i></span></div>
+                                        <div className="card-detail">대장, PC에서 기다릴게요!</div>
+                                    </div>
+                                    <div className="card-tag">
+                                        <i class="fas fa-desktop"> MMORPG</i>
+                                    </div>
                                 </div>
-                                <div className="pc-card">
-
+                                <div className="all-pc-card">
+                                    <div className="card-img">
+                                        <img alt="" src="sources/v4.jpg"/>
+                                    </div>
+                                    <div className="card-info">
+                                        <div className="card-title"><span>V4</span><span><i class="fab fa-youtube"></i></span></div>
+                                        <div className="card-detail">대장, PC에서 기다릴게요!</div>
+                                    </div>
+                                    <div className="card-tag">
+                                        <i class="fas fa-desktop"> MMORPG</i>
+                                    </div>
                                 </div>
-                                <div className="pc-card">
-
+                                <div className="all-pc-card">
+                                    <div className="card-img">
+                                        <img alt="" src="sources/v4.jpg"/>
+                                    </div>
+                                    <div className="card-info">
+                                        <div className="card-title">V4</div>
+                                        <div className="card-detail">대장, PC에서 기다릴게요!</div>
+                                    </div>
+                                    <div className="card-tag">
+                                        <i class="fas fa-desktop"> MMORPG</i>
+                                    </div>
                                 </div>
-                                <div className="pc-card">
-
+                                <div className="all-pc-card">
+                                    <div className="card-img">
+                                        <img alt="" src="sources/v4.jpg"/>
+                                    </div>
+                                    <div className="card-info">
+                                        <div className="card-title">V4</div>
+                                        <div className="card-detail">대장, PC에서 기다릴게요!</div>
+                                    </div>
+                                    <div className="card-tag">
+                                        <i class="fas fa-desktop"> MMORPG</i>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="card-list">
-                                <div className="pc-card">
-
+                            <div className="all-card-list">
+                                <div className="all-pc-card">
+                                    <div className="card-img">
+                                        <img alt="" src="sources/v4.jpg"/>
+                                    </div>
+                                    <div className="card-info">
+                                        <div className="card-title">V4</div>
+                                        <div className="card-detail">대장, PC에서 기다릴게요!</div>
+                                    </div>
+                                    <div className="card-tag">
+                                        <i class="fas fa-desktop"> MMORPG</i>
+                                    </div>
                                 </div>
-                                <div className="pc-card">
-
+                                <div className="all-pc-card">
+                                    <div className="card-img">
+                                        <img alt="" src="sources/v4.jpg"/>
+                                    </div>
+                                    <div className="card-info">
+                                        <div className="card-title">V4</div>
+                                        <div className="card-detail">대장, PC에서 기다릴게요!</div>
+                                    </div>
+                                    <div className="card-tag">
+                                        <i class="fas fa-desktop"> MMORPG</i>
+                                    </div>
                                 </div>
-                                <div className="pc-card">
-
+                                <div className="all-pc-card">
+                                    <div className="card-img">
+                                        <img alt="" src="sources/v4.jpg"/>
+                                    </div>
+                                    <div className="card-info">
+                                        <div className="card-title">V4</div>
+                                        <div className="card-detail">대장, PC에서 기다릴게요!</div>
+                                    </div>
+                                    <div className="card-tag">
+                                        <i class="fas fa-desktop"> MMORPG</i>
+                                    </div>
                                 </div>
-                                <div className="pc-card">
-
+                                <div className="all-pc-card">
+                                    <div className="card-img">
+                                        <img alt="" src="sources/v4.jpg"/>
+                                    </div>
+                                    <div className="card-info">
+                                        <div className="card-title">V4</div>
+                                        <div className="card-detail">대장, PC에서 기다릴게요!</div>
+                                    </div>
+                                    <div className="card-tag">
+                                        <i class="fas fa-desktop"> MMORPG</i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -182,30 +250,126 @@ export default function Main(){
                         <div className="all-mobile-cards">
                             <div className="m-card-list">
                                 <div className="m-card">
-
+                                    <div>
+                                        <img alt="" src="sources/kart.jpg"/>
+                                    </div>
+                                    <div className="m-card-detail">
+                                        <div>
+                                            <div className="card-title"><span>메이플스토리M</span><span><i class="fas fa-coffee"></i></span></div>
+                                            <div className="card-detail">RPG</div>
+                                        </div>
+                                        <div className="m-card-logo">
+                                            <i class="fab fa-apple"></i>
+                                            <i class="fab fa-google-play"></i>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className="m-card">
-
+                                    <div>
+                                        <img alt="" src="sources/kart.jpg"/>
+                                    </div>
+                                    <div className="m-card-detail">
+                                        <div>
+                                            <div className="card-title"><span>메이플스토리M</span><span><i class="fas fa-coffee"></i></span></div>
+                                            <div className="card-detail">RPG</div>
+                                        </div>
+                                        <div className="m-card-logo">
+                                            <i class="fab fa-apple"></i>
+                                            <i class="fab fa-google-play"></i>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className="m-card">
-
+                                    <div>
+                                        <img alt="" src="sources/kart.jpg"/>
+                                    </div>
+                                    <div className="m-card-detail">
+                                        <div>
+                                            <div className="card-title"><span>메이플스토리M</span><span><i class="fas fa-coffee"></i></span></div>
+                                            <div className="card-detail">RPG</div>
+                                        </div>
+                                        <div className="m-card-logo">
+                                            <i class="fab fa-apple"></i>
+                                            <i class="fab fa-google-play"></i>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className="m-card">
-
+                                    <div>
+                                        <img alt="" src="sources/kart.jpg"/>
+                                    </div>
+                                    <div className="m-card-detail">
+                                        <div>
+                                            <div className="card-title"><span>메이플스토리M</span><span><i class="fas fa-coffee"></i></span></div>
+                                            <div className="card-detail">RPG</div>
+                                        </div>
+                                        <div className="m-card-logo">
+                                            <i class="fab fa-apple"></i>
+                                            <i class="fab fa-google-play"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className="m-card-list">
                                 <div className="m-card">
-
+                                    <div>
+                                        <img alt="" src="sources/kart.jpg"/>
+                                    </div>
+                                    <div className="m-card-detail">
+                                        <div>
+                                            <div className="card-title"><span>메이플스토리M</span><span><i class="fas fa-coffee"></i></span></div>
+                                            <div className="card-detail">RPG</div>
+                                        </div>
+                                        <div className="m-card-logo">
+                                            <i class="fab fa-apple"></i>
+                                            <i class="fab fa-google-play"></i>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className="m-card">
-
+                                    <div>
+                                        <img alt="" src="sources/kart.jpg"/>
+                                    </div>
+                                    <div className="m-card-detail">
+                                        <div>
+                                            <div className="card-title"><span>메이플스토리M</span><span><i class="fas fa-coffee"></i></span></div>
+                                            <div className="card-detail">RPG</div>
+                                        </div>
+                                        <div className="m-card-logo">
+                                            <i class="fab fa-apple"></i>
+                                            <i class="fab fa-google-play"></i>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className="m-card">
-
+                                    <div>
+                                        <img alt="" src="sources/kart.jpg"/>
+                                    </div>
+                                    <div className="m-card-detail">
+                                        <div>
+                                            <div className="card-title"><span>메이플스토리M</span><span><i class="fas fa-coffee"></i></span></div>
+                                            <div className="card-detail">RPG</div>
+                                        </div>
+                                        <div className="m-card-logo">
+                                            <i class="fab fa-apple"></i>
+                                            <i class="fab fa-google-play"></i>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className="m-card">
-
+                                    <div>
+                                        <img alt="" src="sources/kart.jpg"/>
+                                    </div>
+                                    <div className="m-card-detail">
+                                        <div>
+                                            <div className="card-title"><span>메이플스토리M</span><span><i class="fas fa-coffee"></i></span></div>
+                                            <div className="card-detail">RPG</div>
+                                        </div>
+                                        <div className="m-card-logo">
+                                            <i class="fab fa-apple"></i>
+                                            <i class="fab fa-google-play"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
