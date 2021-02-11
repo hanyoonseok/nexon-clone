@@ -1,9 +1,12 @@
 .main-container{
     width:100%;
 }
+button:focus{
+    outline:none;
+}
 .main-screen{
     position:relative;
-    background-image: url("../sources/main.jpg");
+    /* background-image: url("../sources/main.jpg"); */
     background-repeat:no-repeat;
     background-size:cover; 
     height:450px;
@@ -57,6 +60,13 @@
     position:relative;
     display:flex;
     flex-direction: column;
+}
+.rec-cards:hover{
+    animation:hoverShadow 0.3s forwards;
+}
+@keyframes hoverShadow{
+    0%{}
+    100%{box-shadow: 0px 2px 50px 1px lightgray;}
 }
 .img-wrap{
     position:absolute;
@@ -216,6 +226,9 @@
     height:320px;
     background-color: white;
 }
+.all-pc-card:hover{
+    animation:hoverShadow 0.3s forwards;
+}
 .card-img{
     overflow: hidden;
     width:100%;
@@ -271,6 +284,9 @@
     margin:25px 0;
     padding:15px 15px;
     display:flex;
+}
+.m-card:hover{
+    animation:hoverShadow 0.3s forwards;
 }
 .m-card img{
     width:90px;

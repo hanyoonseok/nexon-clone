@@ -1,17 +1,158 @@
-import react from 'react'
+import react,{useEffect,useState,useRef} from 'react'
 import './css/Main.css'
 import Tube from './Tube'
-import Slider from './Slider'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import './css/Slider.css'
 
 export default function Main(){
+    const sliderRef=useRef();
+    const [current, setCurrent]=useState(1);
+    var settings = {
+        infinite: true,
+        speed: 200,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        cssEase:"linear",
+        draggable:false,
+    };
+    function aa(){
+        setCurrent(1);
+    }
+    useEffect(()=>{
+        setInterval(()=>{
+            setCurrent(current => current+1);
+        },6000);
+        return ()=>clearInterval();
+    },current)
+    function nextt(){
+        sliderRef.current.slickNext();
+    }
     return(
         <div className="main-container">
-            <div className="main-screen">
+            <div className="main-screen" style={{backgroundImage:`url('https://placeimg.com/40/40/${current}')`}}>
                 <div className="main-screen-youtube">
                     <Tube/>
                 </div>
                 <div className="main-screen-btns">
-                    <Slider/>
+                    <div className="slider-container">
+                        <Slider {...settings} ref={sliderRef}>
+                            <div className="slide-card" onClick={aa}>
+                                <button className="slide-btn "></button>
+                                <span className= {current==1?"on":""}></span>
+                                <div className="slide-btn-title">크레이지 아케이드</div>
+                                <div className="slide-btn-detail">나비 커플링 만들기</div>
+                            </div>
+                            <div className="slide-card">
+                                <button className="slide-btn"></button>
+                                <span className= {current==2?"on":""}></span>
+                                <div className="slide-btn-title">2</div>
+                                <div className="slide-btn-detail">나비 커플링 만들기aaaaaaaaaaaaa</div>
+                            </div>
+                            <div className="slide-card">
+                                <button className="slide-btn"></button>
+                                <span className= {current==3?"on":""}></span>
+                                <div className="slide-btn-title">3이드</div>
+                                <div className="slide-btn-detail">나비 커플링 만들기aaaaaaaaaaaa</div>
+                            </div>
+                            <div className="slide-card">
+                                <button className="slide-btn"></button>
+                                <span className= {current==4?"on":""}></span>
+                                <div className="slide-btn-title">크4</div>
+                                <div className="slide-btn-detail">나비 커플링 만들기aaaaaaaaaaaa</div>
+                            </div>
+                            <div className="slide-card">
+                                <button className="slide-btn"></button>
+                                <span className= {current==5?"on":""}></span>
+                                <div className="slide-btn-title">크5드</div>
+                                <div className="slide-btn-detail">나비 커플링 만들기aaaaaaaaaaaa</div>
+                            </div>
+                            <div className="slide-card" onClick={nextt}>
+                                <button className="slide-btn"></button>
+                                <span></span>
+                                <div className="slide-btn-title">크6드</div>
+                                <div className="slide-btn-detail">나비 커플링 만들기</div>
+                            </div>
+                            <div className="slide-card">
+                                <button className="slide-btn"></button>
+                                <span></span>
+                                <div className="slide-btn-title">크7드</div>
+                                <div className="slide-btn-detail">나비 커플링 만들기aaaaaaaaaaaaa</div>
+                            </div>
+                            <div className="slide-card">
+                                <button className="slide-btn"></button>
+                                <span></span>
+                                <div className="slide-btn-title">크드8</div>
+                                <div className="slide-btn-detail">나비 커플링 만들기aaaaaaaaaaaa</div>
+                            </div>
+                                {/* <button className="slide-btn">
+                                    <span></span>
+                                    <div className="slide-btn-title">크레이지 아케이드 <br/></div>
+                                    <div className="slide-btn-detail">나비 커플링 만들기</div>
+                                </button>
+                                <button className="slide-btn">
+                                    <div className="slide-btn-title">카운터스트라이크 온라인<br/></div>
+                                    <div className="slide-btn-detail">천상의 에픽 무기 '디바인 블래스터'</div>
+                                </button>
+                                <button className="slide-btn">
+                                    <div className="slide-btn-title">메이플스토리<br/></div>
+                                    <div className="slide-btn-detail">신규지역 호텔 아르크스</div>
+                                </button>
+                                <button className="slide-btn">
+                                    <div className="slide-btn-title">카트라이더 러쉬플러스<br/></div>
+                                    <div className="slide-btn-detail">카러플|포르쉐 타이칸 등장!</div>
+                                </button>
+                                <button className="slide-btn">
+                                    <div className="slide-btn-title">EA SPORTS FIFA ONLINE 4 <br/></div>
+                                    <div className="slide-btn-detail">21 TOTY 출시</div>
+                                </button>
+                                <button className="slide-btn">
+                                    <div className="slide-btn-title">마비노기<br/></div>
+                                    <div className="slide-btn-detail">전투 콘텐츠 UP데이트</div>
+                                </button>
+                                <button className="slide-btn">
+                                    <div className="slide-btn-title">넥슨<br/></div>
+                                    <div className="slide-btn-detail">넥슨 보안 캠페인</div>
+                                </button>
+                                <button className="slide-btn">
+                                    <div className="slide-btn-title">사이퍼즈<br/></div>
+                                    <div className="slide-btn-detail">신축년 설 이벤트</div>
+                                </button>
+                                <button className="slide-btn">
+                                    <div className="slide-btn-title">테일즈 위버<br/></div>
+                                    <div className="slide-btn-detail">신축년 소.확.행 이벤트!</div>
+                                </button>
+                                <button className="slide-btn">
+                                    <div className="slide-btn-title">EA SPORTS FIFA ONLINE 4 <br/></div>
+                                    <div className="slide-btn-detail">21 TOTY 출시</div>
+                                </button>
+                                <button className="slide-btn">
+                                    <div className="slide-btn-title">천애명월도<br/></div>
+                                    <div className="slide-btn-detail">천애명월도 절대쌍교 이벤트</div>
+                                </button>
+                                <button className="slide-btn">
+                                    <div className="slide-btn-title">EA SPORTS FIFA ONLINE 4 <br/></div>
+                                    <div className="slide-btn-detail">설날 플레이 버닝</div>
+                                </button>
+                                <button className="slide-btn">
+                                    <div className="slide-btn-title">카운터 사이드<br/></div>
+                                    <div className="slide-btn-detail">카운터 사이드 1주년</div>
+                                </button>
+                                <button className="slide-btn">
+                                    <div className="slide-btn-title">EA SPORTS FIFA ONLINE 4 <br/></div>
+                                    <div className="slide-btn-detail">21 TOTY 출시</div>
+                                </button>
+                                <button className="slide-btn">
+                                    <div className="slide-btn-title">EA SPORTS FIFA ONLINE 4 <br/></div>
+                                    <div className="slide-btn-detail">21 TOTY 출시</div>
+                                </button>
+                                <button className="slide-btn">
+                                    <div className="slide-btn-title">카트라이더<br/></div>
+                                    <div className="slide-btn-detail">카트라이더 X 한국타이어</div>
+                                </button>  */}
+                        </Slider>
+                    </div>
                 </div>
             </div>
             <div className="sub-screen">

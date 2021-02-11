@@ -20,7 +20,13 @@ export default function simpleSlider(){
                     <button className="slide-btn"></button>
                     <span></span>
                     <div className="slide-btn-title">크레이지 아케이드</div>
-                    <div className="slide-btn-detail">나비 커플링 만들기aaaaaaaaaaaa</div>
+                    <div className="slide-btn-detail">나비 커플링 만들기</div>
+                </div>
+                <div className="slide-card">
+                    <button className="slide-btn"></button>
+                    <span></span>
+                    <div className="slide-btn-title">크레이지 아케이드</div>
+                    <div className="slide-btn-detail">나비 커플링 만들기aaaaaaaaaaaaa</div>
                 </div>
                 <div className="slide-card">
                     <button className="slide-btn"></button>
@@ -40,13 +46,7 @@ export default function simpleSlider(){
                     <div className="slide-btn-title">크레이지 아케이드</div>
                     <div className="slide-btn-detail">나비 커플링 만들기aaaaaaaaaaaa</div>
                 </div>
-                <div className="slide-card">
-                    <button className="slide-btn"></button>
-                    <span></span>
-                    <div className="slide-btn-title">크레이지 아케이드</div>
-                    <div className="slide-btn-detail">나비 커플링 만들기aaaaaaaaaaaa</div>
-                </div>
-                    <button className="slide-btn">
+                    {/* <button className="slide-btn">
                         <span></span>
                         <div className="slide-btn-title">크레이지 아케이드 <br/></div>
                         <div className="slide-btn-detail">나비 커플링 만들기</div>
@@ -110,7 +110,7 @@ export default function simpleSlider(){
                     <button className="slide-btn">
                         <div className="slide-btn-title">카트라이더<br/></div>
                         <div className="slide-btn-detail">카트라이더 X 한국타이어</div>
-                    </button> 
+                    </button>  */}
             </Slider>
         </div>
     )

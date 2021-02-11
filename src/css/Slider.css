@@ -2,13 +2,9 @@
     padding:0 40px;
     height:80px;
 }
-.slick-list{
-    height:80px;
-}
 .slide-card{
     position:relative;
     height:100%;
-    width:100px;
 }
 .slider-container .slide-btn{
     position:absolute;
@@ -33,15 +29,15 @@
     left:0;
     right:0;
     height:100%;
-    animation:loading 6s forwards; 
-    background-color: #0077ff;
     z-index: -1;
 }
+.on{animation:loading 6s forwards; }
 @keyframes loading{
-    0%{width:0}
-    100%{width:100%}
+    0%{width:0;background-color: #0077ff;}
+    100%{width:100%;background-color: #0077ff;}
 }
 .slide-btn-title{
+    width:100%;
     font-size: 14px;
     color:lightgray;
     padding-top: 15px;
