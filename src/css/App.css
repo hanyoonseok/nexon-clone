@@ -1,27 +1,9 @@
-/* @font-face{ 
-    font-family: "NEXON Lv2 Gothic";
-    src:url("../sources/NEXON_Lv2_Gothic.eot");
-    src:url("../sources/NEXON_Lv2_Gothic.woff");
-    src:url('../sources/NEXON_Lv2_Gothic?#iefix') format('embedded-opentype');
-}
-@font-face{
-    font-family: "NEXON Lv2 Gothic Light";
-    src:url("../sources/NEXON_Lv2_Gothic_Light.eot");
-    src:url("../sources/NEXON_Lv2_Gothic_Light.woff");
-    src:url('../sources/NEXON_Lv2_Gothic_Light?#iefix') format('embedded-opentype');
-}
-@font-face{
-    font-family: "NEXON Lv2 Gothic Bold";
-    src:url("../sources/NEXON_Lv2_Gothic_Bold.eot");
-    src:url("../sources/NEXON_Lv2_Gothic_Bold.woff");
-    src:url('../sources/NEXON_Lv2_Gothic_Bold?#iefix') format('embedded-opentype');
-} */
 
 *{
     padding:0;
     margin:0;
     box-sizing:border-box;
-    
+    font-family: "Nanum Gothic"
 }
 
 button{
