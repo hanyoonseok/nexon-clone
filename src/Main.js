@@ -1,92 +1,63 @@
-import react,{useEffect,useState,useRef} from 'react'
+import react,{useState,useEffect,useRef} from 'react'
 import './css/Main.css'
 import Tube from './Tube'
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
 import './css/Slider.css'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, {Navigation, Pagination, Autoplay} from 'swiper';
+import 'swiper/swiper-bundle.css'
 
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 export default function Main(){
-    const sliderRef=useRef();
-    const [current, setCurrent]=useState(1);
-    var settings = {
-        infinite: true,
-        speed: 200,
-        slidesToShow: 5,
-        slidesToScroll: 5,
-        cssEase:"linear",
-        draggable:false,
-    };
-    function aa(){
-        setCurrent(1);
-    }
-    useEffect(()=>{
-        setInterval(()=>{
-            setCurrent(current => current+1);
-        },6000);
-        return ()=>clearInterval();
-    },current)
-    function nextt(){
-        sliderRef.current.slickNext();
-    }
-    return(
         <div className="main-container">
-            <div className="main-screen" style={{backgroundImage:`url('https://placeimg.com/40/40/${current}')`}}>
+            <div className="main-screen" style={{backgroundColor:'black'}}>
                 <div className="main-screen-youtube">
                     <Tube/>
                 </div>
                 <div className="main-screen-btns">
                     <div className="slider-container">
-                        <Slider {...settings} ref={sliderRef}>
-                            <div className="slide-card" onClick={aa}>
-                                <button className="slide-btn "></button>
-                                <span className= {current==1?"on":""}></span>
+                        <Swiper
+                            spaceBetween={2}
+                            slidesPerView={1}
+                            followFinger={false}
+                            loop={true}
+                            navigation
+                            watchSlidesProgress={true}
+                            watchSlidesVisibility={true}
+                            autoplay={{delay:2000, disableOnInteraction:false}}
+                            >
+                            <SwiperSlide className="slide-card">
+                                {({isActive})=>(
+                                    <span className={isActive?'on':''}>agadfsdafsadf</span>
+                                )}
                                 <div className="slide-btn-title">크레이지 아케이드</div>
                                 <div className="slide-btn-detail">나비 커플링 만들기</div>
-                            </div>
-                            <div className="slide-card">
-                                <button className="slide-btn"></button>
-                                <span className= {current==2?"on":""}></span>
-                                <div className="slide-btn-title">2</div>
-                                <div className="slide-btn-detail">나비 커플링 만들기aaaaaaaaaaaaa</div>
-                            </div>
-                            <div className="slide-card">
-                                <button className="slide-btn"></button>
-                                <span className= {current==3?"on":""}></span>
-                                <div className="slide-btn-title">3이드</div>
-                                <div className="slide-btn-detail">나비 커플링 만들기aaaaaaaaaaaa</div>
-                            </div>
-                            <div className="slide-card">
-                                <button className="slide-btn"></button>
-                                <span className= {current==4?"on":""}></span>
-                                <div className="slide-btn-title">크4</div>
-                                <div className="slide-btn-detail">나비 커플링 만들기aaaaaaaaaaaa</div>
-                            </div>
-                            <div className="slide-card">
-                                <button className="slide-btn"></button>
-                                <span className= {current==5?"on":""}></span>
-                                <div className="slide-btn-title">크5드</div>
-                                <div className="slide-btn-detail">나비 커플링 만들기aaaaaaaaaaaa</div>
-                            </div>
-                            <div className="slide-card" onClick={nextt}>
-                                <button className="slide-btn"></button>
+                            </SwiperSlide>
+                            <SwiperSlide className="slide-card">
                                 <span></span>
-                                <div className="slide-btn-title">크6드</div>
+                                <div className="slide-btn-title">크레이지 아케이드</div>
                                 <div className="slide-btn-detail">나비 커플링 만들기</div>
-                            </div>
-                            <div className="slide-card">
-                                <button className="slide-btn"></button>
+                            </SwiperSlide>
+                            <SwiperSlide className="slide-card">
                                 <span></span>
-                                <div className="slide-btn-title">크7드</div>
-                                <div className="slide-btn-detail">나비 커플링 만들기aaaaaaaaaaaaa</div>
-                            </div>
-                            <div className="slide-card">
-                                <button className="slide-btn"></button>
+                                <div className="slide-btn-title">크레이지 아케이드</div>
+                                <div className="slide-btn-detail">나비 커플링 만들기</div>
+                            </SwiperSlide>
+                            <SwiperSlide className="slide-card">
                                 <span></span>
-                                <div className="slide-btn-title">크드8</div>
-                                <div className="slide-btn-detail">나비 커플링 만들기aaaaaaaaaaaa</div>
-                            </div>
-                        </Slider>
+                                <div className="slide-btn-title">크레이지 아케이드</div>
+                                <div className="slide-btn-detail">나비 커플링 만들기</div>
+                            </SwiperSlide>
+                            <SwiperSlide className="slide-card">
+                                <span></span>
+                                <div className="slide-btn-title">크레이지 아케이드</div>
+                                <div className="slide-btn-detail">나비 커플링 만들기</div>
+                            </SwiperSlide>
+                            <SwiperSlide className="slide-card">
+                                <span></span>
+                                <div className="slide-btn-title">크레이지 아케이드</div>
+                                <div className="slide-btn-detail">나비 커플링 만들기</div>
+                            </SwiperSlide>
+                        </Swiper>
                     </div>
                 </div>
             </div>
