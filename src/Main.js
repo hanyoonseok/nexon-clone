@@ -8,6 +8,7 @@ import 'swiper/swiper-bundle.css'
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 export default function Main(){
+    return(
         <div className="main-container">
             <div className="main-screen" style={{backgroundColor:'black'}}>
                 <div className="main-screen-youtube">
