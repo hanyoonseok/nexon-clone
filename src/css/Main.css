@@ -6,7 +6,7 @@ button:focus{
 }
 .main-screen{
     position:relative;
-    /* background-image: url("../sources/main.jpg"); */
+    background-image: url("../sources/main.jpg");
     background-repeat:no-repeat;
     background-size:cover; 
     height:450px;
@@ -89,7 +89,7 @@ button:focus{
     100%{transform:scale(1.1)}
 } 
 .rec-cards img:hover{
-    animation:imghover 0.5s forwards;
+    animation:imghover 0.3s forwards;
 }
 .rec-cards-detail{
     width:100%;
@@ -192,6 +192,34 @@ button:focus{
 }
 .all-title-title{
     font-size: 25px;
+    margin-right: 15px;
+}
+.all-title-container button{
+    background-color: white;
+    width:30px; height:30px;
+    color:#aba1ba;
+    border:2px solid #aba1ba;
+    font-size: 10px;
+    cursor: pointer;
+}
+.all-title-container button:focus{
+    color:white;
+    background-color: black;
+    border:none;
+    outline:none;
+}
+.off:hover{
+    animation:offHover 0.3s forwards;
+}
+@keyframes offHover{
+    0%{}
+    100%{
+    color: #0077ff;
+    border:2px solid  #0077ff;}
+}
+.all-title-container{
+    display:flex;
+    align-items: center;
 }
 .pc-mob{
     color:#aba1ba;
@@ -223,121 +251,8 @@ button:focus{
 .all-pc-title{
     font-size: 18px;
 }
-.all-card-list{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width:100%;
-}
-/* pc card */
 
-.all-pc-card{
-    margin:30px 0;
-    width:300px;
-    height:320px;
-    background-color: white;
-}
-.all-pc-card:hover{
-    animation:hoverShadow 0.3s forwards;
-}
-.card-img{
-    overflow: hidden;
-    width:100%;
-    height:200px;
-}
-.card-img img{
-    width:100%;
-    height:100%;
-    object-fit: cover;
-    max-width: 100%;
-}
-.card-img img:hover{
-    animation:imghover 0.5s forwards;
-}
-.card-info{
-    padding:20px 25px;
-    border-bottom:0.05px solid lightgray;
-}
-.card-info i:hover{
-    animation:mobClick 0.3s forwards;
-}
-.card-title{
-    width:100%;
-    font-size: 15px;
-    display:flex;
-    justify-content: space-between;
-    white-space: nowrap;
-}
-.card-detail{
-    font-size: 12px;
-    color:#a0a1a7;
-    margin-top: 10px;
-}
-.card-tag{
-    font-size: 12px;
-    color:#9fa1bb;
-    padding:10px 25px;
-}
-/* mobile card */
-.all-mobile-title{
-    margin-top: 70px;
-}
-.all-mobile-cards{
-    width:100%;
-}
-.m-card-list{
-    display:flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.m-card{
-    width:300px;
-    height:120px;
-    background-color: white;
-    margin:25px 0;
-    padding:15px 15px;
-    display:flex;
-}
-.m-card:hover{
-    animation:hoverShadow 0.3s forwards;
-}
-.m-card img{
-    width:90px;
-    height:90px;
-    border-radius: 20px;
-}
-.m-card-detail{
-    padding-left:15px;
-    width:100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.m-card-logo i{
-    margin-right: 10px;
-}
-.morebtn{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:15px;
-    padding-bottom: 200px;
-}
-.morebtn button{
-    width:170px; height:50px;
-    font-size: 15px;
-    border:2px solid #9fa1a7;
-    background-color: transparent;
-    color:#9fa1a7;
-}
-@keyframes btnHover{
-    0%{}
-    100%{background-color: #9fa1a7;
-        color:white;}
-}
-.morebtn button:hover{
-    animation:btnHover 0.3s forwards;
-}
+
 
 @media screen and (max-width:1200px)
 {
@@ -380,7 +295,7 @@ button:focus{
         animation:none;
     }
     .m-card img:hover{
-        animation:imghover 0.5s forwards;
+        animation:imghover 0.3s forwards;
     }
     .m-card-logo{
         display:none;
@@ -398,7 +313,7 @@ button:focus{
         padding:0 30px;
     }
     .main-screen-youtube{
-        right:1%;
+        display:none;
     }
     .rec-cards-detail h6{
         display:none;
@@ -406,8 +321,5 @@ button:focus{
     .rec-cards{
         width:200px;
         height:250px;
-    }
-    .modal{
-        width:480px;
     }
 }

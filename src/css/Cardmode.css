@@ -1,0 +1,151 @@
+/* pc card */
+.all-pc-cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:100%;
+}
+.all-pc-card{
+    margin:30px 0;
+    width:300px;
+    height:320px;
+    background-color: white;
+}
+.all-pc-card:hover{
+    animation:hoverShadow 0.3s forwards;
+}
+.card-img{
+    overflow: hidden;
+    width:100%;
+    height:200px;
+}
+.card-img img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    max-width: 100%;
+}
+.card-img img:hover{
+    animation:imghover 0.3s forwards;
+}
+.card-info{
+    padding:20px 25px;
+    border-bottom:0.05px solid lightgray;
+}
+.card-info i:hover{
+    animation:mobClick 0.3s forwards;
+}
+.card-title{
+    width:100%;
+    font-size: 15px;
+    display:flex;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+.card-detail{
+    font-size: 12px;
+    color:#a0a1a7;
+    margin-top: 10px;
+}
+.card-tag{
+    font-size: 12px;
+    color:#9fa1bb;
+    padding:10px 25px;
+}
+
+
+/* mobile card */
+.all-mobile-title{
+    margin-top: 70px;
+}
+.all-mobile-cards{
+    width:100%;
+}
+.m-card-list{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.m-card{
+    width:300px;
+    height:120px;
+    background-color: white;
+    margin:25px 0;
+    padding:15px 15px;
+    display:flex;
+}
+.m-card:hover{
+    animation:hoverShadow 0.3s forwards;
+}
+.m-card img{
+    width:90px;
+    height:90px;
+    border-radius: 20px;
+}
+.m-card-detail{
+    padding-left:15px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.m-card-logo i{
+    margin-right: 10px;
+}
+.morebtn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:15px;
+    padding-bottom: 200px;
+}
+.morebtn button{
+    width:170px; height:50px;
+    font-size: 15px;
+    border:2px solid #9fa1a7;
+    background-color: transparent;
+    color:#9fa1a7;
+}
+@keyframes btnHover{
+    0%{}
+    100%{background-color: #9fa1a7;
+        color:white;}
+}
+.morebtn button:hover{
+    animation:btnHover 0.3s forwards;
+}
+
+@media screen and (max-width:1200px)
+{
+    .all-pc-card{
+        width:200px;height:260px;
+    }
+    .card-detail, .card-tag{
+        display:none;
+    }
+    .m-card-list{
+        justify-content: center;
+    }
+    .m-card{
+        flex-direction: column;
+        width:180px;
+        height:140px;
+        background-color: #f8f9fa;
+    }
+    .m-card:hover{
+        animation:none;
+    }
+    .m-card img:hover{
+        animation:imghover 0.3s forwards;
+    }
+    .m-card-logo{
+        display:none;
+    }
+    .m-card-detail .card-title{
+        font-size: 10px;
+    }
+    .m-card-detail{
+        padding-left: 0px;
+        margin-right: 5px;
+    }
+}

@@ -1,6 +1,8 @@
 import react,{useState,useEffect,useRef} from 'react'
 import './css/Main.css'
 import Tube from './Tube'
+import CardMode from './CardMode'
+import ListMode from './ListMode'
 import './css/Slider.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {Navigation, Pagination, Autoplay} from 'swiper';
@@ -8,6 +10,13 @@ import 'swiper/swiper-bundle.css'
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 export default function Main(){
+    const [Mode, setMode] =useState(false);
+    function cardmode(){
+        setMode(true);
+    }
+    function listmode(){
+        setMode(false);
+    }
     return(
         <div className="main-container">
             <div className="main-screen">
@@ -30,28 +39,53 @@ export default function Main(){
                         </SwiperSlide>
                         <SwiperSlide className="slide-card">
                             <span></span>
-                            <div className="slide-btn-title">크레이지 아케이드</div>
-                            <div className="slide-btn-detail">나비 커플링 만들기</div>
+                            <div className="slide-btn-title">카운터스트라이크 온라인</div>
+                            <div className="slide-btn-detail">천상의 에픽 무기 '디바인 블래스터'</div>
                         </SwiperSlide>
                         <SwiperSlide className="slide-card">
                             <span></span>
-                            <div className="slide-btn-title">크레이지 아케이드</div>
-                            <div className="slide-btn-detail">나비 커플링 만들기</div>
+                            <div className="slide-btn-title">메이플스토리</div>
+                            <div className="slide-btn-detail">신규지역 호텔 아르크스</div>
                         </SwiperSlide>
                         <SwiperSlide className="slide-card">
                             <span></span>
-                            <div className="slide-btn-title">크레이지 아케이드</div>
-                            <div className="slide-btn-detail">나비 커플링 만들기</div>
+                            <div className="slide-btn-title">카트라이더 러쉬플러스</div>
+                            <div className="slide-btn-detail">카러플|포르쉐 타이칸 등장!</div>
                         </SwiperSlide>
                         <SwiperSlide className="slide-card">
                             <span></span>
-                            <div className="slide-btn-title">크레이지 아케이드</div>
-                            <div className="slide-btn-detail">나비 커플링 만들기</div>
+                            <div className="slide-btn-title">EA SPORTS FIFA ONLINE 4</div>
+                            <div className="slide-btn-detail">21 TOTY 출시</div>
                         </SwiperSlide>
                         <SwiperSlide className="slide-card">
                             <span></span>
-                            <div className="slide-btn-title">크레이지 아케이드</div>
-                            <div className="slide-btn-detail">나비 커플링 만들기</div>
+                            <div className="slide-btn-title">마비노기</div>
+                            <div className="slide-btn-detail">전투 콘텐츠 UP데이트</div>
+                        </SwiperSlide>
+                        <SwiperSlide className="slide-card">
+                            <span></span>
+                            <div className="slide-btn-title">넥슨</div>
+                            <div className="slide-btn-detail">넥슨 보안 캠페인</div>
+                        </SwiperSlide>
+                        <SwiperSlide className="slide-card">
+                            <span></span>
+                            <div className="slide-btn-title">사이퍼즈</div>
+                            <div className="slide-btn-detail">신축년 설 이벤트</div>
+                        </SwiperSlide>
+                        <SwiperSlide className="slide-card">
+                            <span></span>
+                            <div className="slide-btn-title">테일즈 위버</div>
+                            <div className="slide-btn-detail">신축년 소.확.행 이벤트!</div>
+                        </SwiperSlide>
+                        <SwiperSlide className="slide-card">
+                            <span></span>
+                            <div className="slide-btn-title">천애명월도</div>
+                            <div className="slide-btn-detail">천애명월도 절대쌍교 이벤트</div>
+                        </SwiperSlide>
+                        <SwiperSlide className="slide-card">
+                            <span></span>
+                            <div className="slide-btn-title">카운터 사이드</div>
+                            <div className="slide-btn-detail">카운터 사이드 1주년</div>
                         </SwiperSlide>
                     </Swiper>
                 </div>
@@ -167,11 +201,11 @@ export default function Main(){
                 </div>
                 <div className="game-all">
                     <div className="all-title">
-                        <div>
+                        <div className="all-title-container">
                             <div className="all-title-title">전체게임</div>
                             <div>
-                                <button></button>
-                                <button></button>
+                                <button onClick={cardmode} className={Mode?"":"off"}><i class="fas fa-th-large"></i></button>
+                                <button onClick={listmode} className={Mode?"off":""}><i class="fas fa-bars"></i></button>
                             </div>
                         </div>
                         <div>
@@ -192,111 +226,13 @@ export default function Main(){
                             <span style={{color:'#4a4e57'}}>PC게임</span>
                             <span className="pc-mob">모바일게임</span>
                         </div>
-                        <div className="all-pc-cards">
-                            <div className="all-card-list">
-                                <div className="all-pc-card">
-                                    <div className="card-img">
-                                        <img alt="" src="sources/v4.jpg"/>
-                                    </div>
-                                    <div className="card-info">
-                                        <div className="card-title"><span>V4</span><span><i class="fas fa-coffee"></i></span></div>
-                                        <div className="card-detail">대장, PC에서 기다릴게요!</div>
-                                    </div>
-                                    <div className="card-tag">
-                                        <i class="fas fa-desktop"> MMORPG</i>
-                                    </div>
-                                </div>
-                                <div className="all-pc-card">
-                                    <div className="card-img">
-                                        <img alt="" src="sources/v4.jpg"/>
-                                    </div>
-                                    <div className="card-info">
-                                        <div className="card-title"><span>V4</span><span><i class="fab fa-youtube"></i></span></div>
-                                        <div className="card-detail">대장, PC에서 기다릴게요!</div>
-                                    </div>
-                                    <div className="card-tag">
-                                        <i class="fas fa-desktop"> MMORPG</i>
-                                    </div>
-                                </div>
-                                <div className="all-pc-card">
-                                    <div className="card-img">
-                                        <img alt="" src="sources/v4.jpg"/>
-                                    </div>
-                                    <div className="card-info">
-                                        <div className="card-title">V4</div>
-                                        <div className="card-detail">대장, PC에서 기다릴게요!</div>
-                                    </div>
-                                    <div className="card-tag">
-                                        <i class="fas fa-desktop"> MMORPG</i>
-                                    </div>
-                                </div>
-                                <div className="all-pc-card">
-                                    <div className="card-img">
-                                        <img alt="" src="sources/v4.jpg"/>
-                                    </div>
-                                    <div className="card-info">
-                                        <div className="card-title">V4</div>
-                                        <div className="card-detail">대장, PC에서 기다릴게요!</div>
-                                    </div>
-                                    <div className="card-tag">
-                                        <i class="fas fa-desktop"> MMORPG</i>
-                                    </div>
-                                </div>
-                                <div className="all-pc-card">
-                                    <div className="card-img">
-                                        <img alt="" src="sources/v4.jpg"/>
-                                    </div>
-                                    <div className="card-info">
-                                        <div className="card-title">V4</div>
-                                        <div className="card-detail">대장, PC에서 기다릴게요!</div>
-                                    </div>
-                                    <div className="card-tag">
-                                        <i class="fas fa-desktop"> MMORPG</i>
-                                    </div>
-                                </div>
-                                <div className="all-pc-card">
-                                    <div className="card-img">
-                                        <img alt="" src="sources/v4.jpg"/>
-                                    </div>
-                                    <div className="card-info">
-                                        <div className="card-title">V4</div>
-                                        <div className="card-detail">대장, PC에서 기다릴게요!</div>
-                                    </div>
-                                    <div className="card-tag">
-                                        <i class="fas fa-desktop"> MMORPG</i>
-                                    </div>
-                                </div>
-                                <div className="all-pc-card">
-                                    <div className="card-img">
-                                        <img alt="" src="sources/v4.jpg"/>
-                                    </div>
-                                    <div className="card-info">
-                                        <div className="card-title">V4</div>
-                                        <div className="card-detail">대장, PC에서 기다릴게요!</div>
-                                    </div>
-                                    <div className="card-tag">
-                                        <i class="fas fa-desktop"> MMORPG</i>
-                                    </div>
-                                </div>
-                                <div className="all-pc-card">
-                                    <div className="card-img">
-                                        <img alt="" src="sources/v4.jpg"/>
-                                    </div>
-                                    <div className="card-info">
-                                        <div className="card-title">V4</div>
-                                        <div className="card-detail">대장, PC에서 기다릴게요!</div>
-                                    </div>
-                                    <div className="card-tag">
-                                        <i class="fas fa-desktop"> MMORPG</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {Mode?<CardMode/>:<ListMode/>}
                     </div>
                     <div className="all-mobile">
                         <div className="all-mobile-title">
                             모바일게임
                         </div>
+                        {Mode?<mCardMode/>:<mListMode/>}
                         <div className="all-mobile-cards">
                             <div className="m-card-list">
                                 <div className="m-card">
