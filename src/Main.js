@@ -3,6 +3,8 @@ import './css/Main.css'
 import Tube from './Tube'
 import CardMode from './CardMode'
 import ListMode from './ListMode'
+import MCardMode from './MCardMode'
+import MListMode from './MListMode'
 import './css/Slider.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {Navigation, Pagination, Autoplay} from 'swiper';
@@ -232,131 +234,8 @@ export default function Main(){
                         <div className="all-mobile-title">
                             모바일게임
                         </div>
-                        {Mode?<mCardMode/>:<mListMode/>}
-                        <div className="all-mobile-cards">
-                            <div className="m-card-list">
-                                <div className="m-card">
-                                    <div>
-                                        <img alt="" src="sources/kart.jpg"/>
-                                    </div>
-                                    <div className="m-card-detail">
-                                        <div>
-                                            <div className="card-title"><span>메이플스토리M</span><span><i class="fas fa-coffee"></i></span></div>
-                                            <div className="card-detail">RPG</div>
-                                        </div>
-                                        <div className="m-card-logo">
-                                            <i class="fab fa-apple"></i>
-                                            <i class="fab fa-google-play"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="m-card">
-                                    <div>
-                                        <img alt="" src="sources/kart.jpg"/>
-                                    </div>
-                                    <div className="m-card-detail">
-                                        <div>
-                                            <div className="card-title"><span>메이플스토리M</span><span><i class="fas fa-coffee"></i></span></div>
-                                            <div className="card-detail">RPG</div>
-                                        </div>
-                                        <div className="m-card-logo">
-                                            <i class="fab fa-apple"></i>
-                                            <i class="fab fa-google-play"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="m-card">
-                                    <div>
-                                        <img alt="" src="sources/kart.jpg"/>
-                                    </div>
-                                    <div className="m-card-detail">
-                                        <div>
-                                            <div className="card-title"><span>메이플스토리M</span><span><i class="fas fa-coffee"></i></span></div>
-                                            <div className="card-detail">RPG</div>
-                                        </div>
-                                        <div className="m-card-logo">
-                                            <i class="fab fa-apple"></i>
-                                            <i class="fab fa-google-play"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="m-card">
-                                    <div>
-                                        <img alt="" src="sources/kart.jpg"/>
-                                    </div>
-                                    <div className="m-card-detail">
-                                        <div>
-                                            <div className="card-title"><span>메이플스토리M</span><span><i class="fas fa-coffee"></i></span></div>
-                                            <div className="card-detail">RPG</div>
-                                        </div>
-                                        <div className="m-card-logo">
-                                            <i class="fab fa-apple"></i>
-                                            <i class="fab fa-google-play"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="m-card">
-                                    <div>
-                                        <img alt="" src="sources/kart.jpg"/>
-                                    </div>
-                                    <div className="m-card-detail">
-                                        <div>
-                                            <div className="card-title"><span>메이플스토리M</span><span><i class="fas fa-coffee"></i></span></div>
-                                            <div className="card-detail">RPG</div>
-                                        </div>
-                                        <div className="m-card-logo">
-                                            <i class="fab fa-apple"></i>
-                                            <i class="fab fa-google-play"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="m-card">
-                                    <div>
-                                        <img alt="" src="sources/kart.jpg"/>
-                                    </div>
-                                    <div className="m-card-detail">
-                                        <div>
-                                            <div className="card-title"><span>메이플스토리M</span><span><i class="fas fa-coffee"></i></span></div>
-                                            <div className="card-detail">RPG</div>
-                                        </div>
-                                        <div className="m-card-logo">
-                                            <i class="fab fa-apple"></i>
-                                            <i class="fab fa-google-play"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="m-card">
-                                    <div>
-                                        <img alt="" src="sources/kart.jpg"/>
-                                    </div>
-                                    <div className="m-card-detail">
-                                        <div>
-                                            <div className="card-title"><span>메이플스토리M</span><span><i class="fas fa-coffee"></i></span></div>
-                                            <div className="card-detail">RPG</div>
-                                        </div>
-                                        <div className="m-card-logo">
-                                            <i class="fab fa-apple"></i>
-                                            <i class="fab fa-google-play"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="m-card">
-                                    <div>
-                                        <img alt="" src="sources/kart.jpg"/>
-                                    </div>
-                                    <div className="m-card-detail">
-                                        <div>
-                                            <div className="card-title"><span>메이플스토리M</span><span><i class="fas fa-coffee"></i></span></div>
-                                            <div className="card-detail">RPG</div>
-                                        </div>
-                                        <div className="m-card-logo">
-                                            <i class="fab fa-apple"></i>
-                                            <i class="fab fa-google-play"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {Mode?<MCardMode/>:<MListMode/>}
+                        
                         <div className="morebtn">
                             <button>더보기</button>
                         </div>
