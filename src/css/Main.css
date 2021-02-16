@@ -17,7 +17,7 @@ button:focus{
     right:17%;
 }
 .main-screen-btns{
-    padding:0px 80px;
+    padding:0px 120px;
     position:absolute;
     width:100%;
     bottom:0;
@@ -211,9 +211,11 @@ button:focus{
     color:#737881;
     display:flex;
     margin-top: 5px;
+    white-space: nowrap;
 }
 .all-tag input[type="radio"]{
     visibility: hidden;
+    
 }
 .all-pc-title{
     margin-top: 60px;
@@ -223,9 +225,12 @@ button:focus{
 }
 .all-card-list{
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    width:100%;
 }
 /* pc card */
+
 .all-pc-card{
     margin:30px 0;
     width:300px;
@@ -261,6 +266,7 @@ button:focus{
     font-size: 15px;
     display:flex;
     justify-content: space-between;
+    white-space: nowrap;
 }
 .card-detail{
     font-size: 12px;
@@ -282,6 +288,7 @@ button:focus{
 .m-card-list{
     display:flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .m-card{
     width:300px;
@@ -330,4 +337,77 @@ button:focus{
 }
 .morebtn button:hover{
     animation:btnHover 0.3s forwards;
+}
+
+@media screen and (max-width:1200px)
+{
+    .sub-screen{
+        padding:0 60px;
+    }
+    .main-screen-youtube{
+        right:10%;
+    }
+    .main-screen-btns{
+        padding:0 10px;
+    }
+    .rec-cards-list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .rec-login-card{
+        display:none;
+    }
+    .rec-cards{
+        width:250px;
+        height:300px;
+    }
+    .all-pc-card{
+        width:200px;height:260px;
+    }
+    .card-detail, .card-tag{
+        display:none;
+    }
+    .m-card-list{
+        justify-content: center;
+    }
+    .m-card{
+        flex-direction: column;
+        width:160px;
+        height:140px;
+        background-color: #f8f9fa;
+    }
+    .m-card:hover{
+        animation:none;
+    }
+    .m-card img:hover{
+        animation:imghover 0.5s forwards;
+    }
+    .m-card-logo{
+        display:none;
+    }
+    .m-card-detail .card-title{
+        font-size: 10px;
+    }
+    .m-card-detail{
+        padding-left: 0px;
+        margin-right: 5px;
+    }
+}
+@media screen and (max-width:700px){
+    .sub-screen{
+        padding:0 30px;
+    }
+    .main-screen-youtube{
+        right:1%;
+    }
+    .rec-cards-detail h6{
+        display:none;
+    }
+    .rec-cards{
+        width:200px;
+        height:250px;
+    }
+    .modal{
+        width:480px;
+    }
 }

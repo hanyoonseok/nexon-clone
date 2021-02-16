@@ -10,56 +10,50 @@ SwiperCore.use([Navigation, Pagination, Autoplay]);
 export default function Main(){
     return(
         <div className="main-container">
-            <div className="main-screen" style={{backgroundColor:'black'}}>
+            <div className="main-screen">
                 <div className="main-screen-youtube">
                     <Tube/>
                 </div>
                 <div className="main-screen-btns">
-                    <div className="slider-container">
-                        <Swiper
-                            spaceBetween={2}
-                            slidesPerView={1}
-                            followFinger={false}
-                            loop={true}
-                            navigation
-                            watchSlidesProgress={true}
-                            watchSlidesVisibility={true}
-                            autoplay={{delay:2000, disableOnInteraction:false}}
-                            >
-                            <SwiperSlide className="slide-card">
-                                {({isActive})=>(
-                                    <span className={isActive?'on':''}>agadfsdafsadf</span>
-                                )}
-                                <div className="slide-btn-title">크레이지 아케이드</div>
-                                <div className="slide-btn-detail">나비 커플링 만들기</div>
-                            </SwiperSlide>
-                            <SwiperSlide className="slide-card">
-                                <span></span>
-                                <div className="slide-btn-title">크레이지 아케이드</div>
-                                <div className="slide-btn-detail">나비 커플링 만들기</div>
-                            </SwiperSlide>
-                            <SwiperSlide className="slide-card">
-                                <span></span>
-                                <div className="slide-btn-title">크레이지 아케이드</div>
-                                <div className="slide-btn-detail">나비 커플링 만들기</div>
-                            </SwiperSlide>
-                            <SwiperSlide className="slide-card">
-                                <span></span>
-                                <div className="slide-btn-title">크레이지 아케이드</div>
-                                <div className="slide-btn-detail">나비 커플링 만들기</div>
-                            </SwiperSlide>
-                            <SwiperSlide className="slide-card">
-                                <span></span>
-                                <div className="slide-btn-title">크레이지 아케이드</div>
-                                <div className="slide-btn-detail">나비 커플링 만들기</div>
-                            </SwiperSlide>
-                            <SwiperSlide className="slide-card">
-                                <span></span>
-                                <div className="slide-btn-title">크레이지 아케이드</div>
-                                <div className="slide-btn-detail">나비 커플링 만들기</div>
-                            </SwiperSlide>
-                        </Swiper>
-                    </div>
+                    <Swiper
+                    spaceBetween={2}
+                    slidesPerView={5}
+                    followFinger={false}
+                    loop={true}
+                    navigation
+                    autoplay={{delay:2000, disableOnInteraction:false}}
+                    >
+                        <SwiperSlide className="slide-card">
+                            <span></span>
+                            <div className="slide-btn-title">크레이지 아케이드</div>
+                            <div className="slide-btn-detail">나비 커플링 만들기</div>
+                        </SwiperSlide>
+                        <SwiperSlide className="slide-card">
+                            <span></span>
+                            <div className="slide-btn-title">크레이지 아케이드</div>
+                            <div className="slide-btn-detail">나비 커플링 만들기</div>
+                        </SwiperSlide>
+                        <SwiperSlide className="slide-card">
+                            <span></span>
+                            <div className="slide-btn-title">크레이지 아케이드</div>
+                            <div className="slide-btn-detail">나비 커플링 만들기</div>
+                        </SwiperSlide>
+                        <SwiperSlide className="slide-card">
+                            <span></span>
+                            <div className="slide-btn-title">크레이지 아케이드</div>
+                            <div className="slide-btn-detail">나비 커플링 만들기</div>
+                        </SwiperSlide>
+                        <SwiperSlide className="slide-card">
+                            <span></span>
+                            <div className="slide-btn-title">크레이지 아케이드</div>
+                            <div className="slide-btn-detail">나비 커플링 만들기</div>
+                        </SwiperSlide>
+                        <SwiperSlide className="slide-card">
+                            <span></span>
+                            <div className="slide-btn-title">크레이지 아케이드</div>
+                            <div className="slide-btn-detail">나비 커플링 만들기</div>
+                        </SwiperSlide>
+                    </Swiper>
                 </div>
             </div>
             <div className="sub-screen">
@@ -248,8 +242,6 @@ export default function Main(){
                                         <i class="fas fa-desktop"> MMORPG</i>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="all-card-list">
                                 <div className="all-pc-card">
                                     <div className="card-img">
                                         <img alt="" src="sources/v4.jpg"/>
@@ -367,8 +359,6 @@ export default function Main(){
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="m-card-list">
                                 <div className="m-card">
                                     <div>
                                         <img alt="" src="sources/kart.jpg"/>

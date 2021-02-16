@@ -7,6 +7,7 @@
     height:60px;
     padding:5px 25px;
     font-size: 16px;
+    white-space: nowrap;
 }
 .nav-menu :hover{
     animation:changeNavColor 0.4s forwards;
@@ -49,5 +50,15 @@
         color:white;
         border:none;
         background-color: #0077ff;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .nav-lists li:not(.nav-login){
+        display:none;
+    }
+    .nav-title{
+        margin-left: 0;
+        left:10%;
     }
 }
