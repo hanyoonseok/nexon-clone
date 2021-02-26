@@ -196,7 +196,7 @@ export default function Main(){
                                 <div>
                                     <span>넥슨 ID찾기</span><span>비밀번호 찾기</span>
                                 </div>
-                                <div>회원가입</div>
+                                <span>회원가입</span>
                             </div>
                         </div>
                     </div>

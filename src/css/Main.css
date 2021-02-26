@@ -4,6 +4,9 @@
 button:focus{
     outline:none;
 }
+button{
+    cursor:pointer;
+}
 .main-screen{
     position:relative;
     background-image: url("../sources/main.jpg");
@@ -60,6 +63,7 @@ button:focus{
     position:relative;
     display:flex;
     flex-direction: column;
+    cursor:pointer;
 }
 .rec-cards:hover{
     animation:hoverShadow 0.3s forwards;
@@ -168,6 +172,7 @@ button:focus{
 .rec-login-lists li{
     padding-left: 10px;
     font-size: 20px;
+    cursor:pointer;
 }
 .rec-service{
     margin-top: 5px;
@@ -179,6 +184,7 @@ button:focus{
 }
 .rec-service span{
     margin-right: 20px;
+    cursor:pointer;
 }
 /* 전체게임 */
 .game-all{
@@ -250,6 +256,9 @@ button:focus{
 }
 .all-pc-title{
     font-size: 18px;
+}
+.all-pc-title span{
+    cursor:pointer;
 }
 
 
