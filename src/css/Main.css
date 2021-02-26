@@ -1,12 +1,7 @@
 .main-container{
     width:100%;
 }
-button:focus{
-    outline:none;
-}
-button{
-    cursor:pointer;
-}
+
 .main-screen{
     position:relative;
     background-image: url("../sources/main.jpg");
@@ -201,10 +196,10 @@ button{
     margin-right: 15px;
 }
 .all-title-container button{
-    background-color: white;
-    width:30px; height:30px;
     color:#aba1ba;
     border:2px solid #aba1ba;
+    background-color: white;
+    width:30px; height:30px;
     font-size: 10px;
     cursor: pointer;
 }
@@ -253,12 +248,13 @@ button{
 }
 .all-pc-title{
     margin-top: 60px;
-}
-.all-pc-title{
     font-size: 18px;
 }
 .all-pc-title span{
     cursor:pointer;
+}
+#all-mobile-title{
+    font-size: 18px;
 }
 
 

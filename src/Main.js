@@ -12,7 +12,7 @@ import 'swiper/swiper-bundle.css'
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 export default function Main(){
-    const [Mode, setMode] =useState(false);
+    const [Mode, setMode] =useState(true);
     function cardmode(){
         setMode(true);
     }
@@ -206,7 +206,7 @@ export default function Main(){
                         <div className="all-title-container">
                             <div className="all-title-title">전체게임</div>
                             <div>
-                                <button onClick={cardmode} className={Mode?"":"off"}><i class="fas fa-th-large"></i></button>
+                                <button onClick={cardmode} autoFocus className={Mode?"":"off"}><i class="fas fa-th-large"></i></button>
                                 <button onClick={listmode} className={Mode?"off":""}><i class="fas fa-bars"></i></button>
                             </div>
                         </div>
@@ -226,12 +226,12 @@ export default function Main(){
                     <div className="all-pc">
                         <div className="all-pc-title">
                             <span style={{color:'#4a4e57'}}>PC게임</span>
-                            <span className="pc-mob">모바일게임</span>
+                            <span className="pc-mob"><a href="#all-mobile-title">모바일게임</a></span>
                         </div>
                         {Mode?<CardMode/>:<ListMode/>}
                     </div>
                     <div className="all-mobile">
-                        <div className="all-mobile-title">
+                        <div id="all-mobile-title">
                             모바일게임
                         </div>
                         {Mode?<MCardMode/>:<MListMode/>}
