@@ -1,8 +1,12 @@
-import react,{useState} from 'react'
+import react,{useState,useEffect} from 'react'
 import './css/Nav.css'
 
 export default function Nav(){
     const [Sidebar, SidebarOn] =useState(false);
+    useEffect(() => {
+        document.body.classList.toggle('bon',Sidebar);
+    },[Sidebar])
+    
     function onon(){
         SidebarOn(true);
     }
