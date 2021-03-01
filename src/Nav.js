@@ -17,7 +17,8 @@ export default function Nav(){
         <>
         <nav className="nav-container">
             <div className="nav-menu">
-                <i className="fas fa-bars" onClick={SidebarOn}> 메뉴</i>  
+                <i className="fas fa-bars" onClick={SidebarOn}></i>  
+                <li>메뉴</li>
             </div>
             <div className="nav-title">
                 NEXON

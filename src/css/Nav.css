@@ -12,8 +12,11 @@
 .bon{
     overflow-y: hidden;
 }
+.nav-menu{
+    display:flex;
+}
 .nav-menu :hover{
-    animation:changeNavColor 0.4s forwards;
+    animation:changeNavColor 0.3s forwards;
 }
 .nav-menu i{
     font-size: 18px;
@@ -40,6 +43,9 @@
 .nav-lists li{
     margin-left: 26px;
 }
+.nav-lists li{
+    color:#17191d;
+}
 .nav-lists button{
     width:85px;
     height:40px;
@@ -65,11 +71,16 @@
 .sidebar-on{
     position:absolute;
     z-index: 99;
-    left:0;
+    left:-400px;
     top:0;
     height:100vh;
     width:440px;
     background-color: white;
+    animation:bar-on 0.3s forwards;
+}
+@keyframes bar-on{
+    0%{opacity:0}
+    100%{opacity:1;left:0;}
 }
 .sidebar-off{
     display:none;

@@ -2,7 +2,7 @@
     padding:0;
     margin:0;
     box-sizing:border-box;
-    font-family: "Nanum Gothic"
+    font-family:"NEXON Lv1 Gothic OTF Bold" ;
 }
 
 button{
@@ -19,4 +19,20 @@ a{
 }
 ul{
     list-style:none;
+}
+li{
+    list-style:none;
+}
+
+@font-face{
+    font-family: "NEXON Lv1 Gothic OTF";
+    src:url('../fonts/NEXON Lv1 Gothic OTF.eot');
+    src:url('../fonts/NEXON Lv1 Gothic OTF.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NEXON Lv1 Gothic OTF.woff') format('woff');
+}
+@font-face{
+    font-family: "NEXON Lv1 Gothic OTF Bold";
+    src:url('../fonts/NEXON Lv1 Gothic OTF Bold.eot');
+    src:url('../fonts/NEXON Lv1 Gothic OTF Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
 }
