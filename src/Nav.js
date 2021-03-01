@@ -33,18 +33,60 @@ export default function Nav(){
             <div className="sidebar-mid">
                 <div className="sidebar-mid-title">
                     <div className="sidebar-mid-category">
-                        <button>pc</button>
-                        <button>mobile</button>
+                        <button>PC게임</button>
+                        <button>모바일게임</button>
                     </div>
                     <div className="sidebar-mid-call">
                         <button>고객센터</button>
                     </div>
                 </div>
                 <div className="sidebar-mid-games">
-                    <div className="game-range">
-
+                    <div className="game-list">
+                        <h3>A~Z</h3>
+                        <ul>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                        </ul>
+                        <h3>A~Z</h3>
+                        <ul>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                        </ul>
+                        <h3>A~Z</h3>
+                        <ul>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                        </ul>
+                        <h3>A~Z</h3>
+                        <ul>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                        </ul>
                     </div>
                     <div className="game-list">
+                        <h3>A~Z</h3>
+                        <ul>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                        </ul>
+                        <h3>A~Z</h3>
+                        <ul>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                        </ul>
+                        <h3>A~Z</h3>
                         <ul>
                             <li>1</li>
                             <li>1</li>

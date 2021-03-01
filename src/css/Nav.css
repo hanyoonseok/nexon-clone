@@ -75,14 +75,46 @@
     align-items: center;
     height:60px;
     padding:5px 25px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #eef0f2;
 }
 .sidebar-top i{
     font-size: 26px;
     cursor:pointer;
 }
 .sidebar-mid{
-    padding:40px 40px;
+    padding:75px 0 50px 42px;
+    overflow-y:scroll;
+    height:460px;
+}
+.sidebar-mid-title{
+    display:flex;
+    justify-content: space-between;
+}
+.sidebar-mid-category{
+    font-size: 10px;
+}
+.sidebar-mid-category button{
+    margin-right: 18px;
+    height:20px;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+}
+.sidebar-mid-call button{
+    background-color: transparent;
+    width:80px;
+    height:30px;
+    color:#9fa1a7;
+    border:2px solid #9fa1a7;
+}
+.sidebar-mid-games{
+    display:flex;
+}
+.game-list{
+    width:188px;
+}
+.game-list h3{
+    padding-top: 24px;;
+    height:50px;
 }
 .sidebar-bottom{
     position:absolute;
