@@ -215,13 +215,15 @@ export default function Main(){
                         </div>
                     </div>
                     <div className="all-tag">
-                        <input type="radio" id="all"/><label for="all">#전체</label>
-                        <input type="radio" id="all"/><label for="all">#전체</label>
-                        <input type="radio" id="all"/><label for="all">#전체</label>
-                        <input type="radio" id="all"/><label for="all">#전체</label>
-                        <input type="radio" id="all"/><label for="all">#전체</label>
-                        <input type="radio" id="all"/><label for="all">#전체</label>
-                        <input type="radio" id="all"/><label for="all">#전체</label>
+                        <div className="all-tag-platform">
+                            <input type="radio" id="all"/><label for="all">#전체</label>
+                            <input type="radio" id="all"/><label for="all">#전체</label>
+                            <input type="radio" id="all"/><label for="all">#전체</label>
+                            <input type="radio" id="all"/><label for="all">#전체</label>
+                            <input type="radio" id="all"/><label for="all">#전체</label>
+                            <input type="radio" id="all"/><label for="all">#전체</label>
+                            <input type="radio" id="all"/><label for="all">#전체</label>
+                        </div>
                     </div>
                     <div className="all-pc">
                         <div className="all-pc-title">

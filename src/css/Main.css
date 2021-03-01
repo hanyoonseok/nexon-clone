@@ -46,9 +46,11 @@
 }
 .rec-title-small li{
     padding-left: 30px;
+    font-family: "NEXON Lv1 Gothic OTF Light";
 }
 .rec-cards-list{
     display:flex;
+    justify-content: space-between;
 }
 .rec-cards{
     width:150px;
@@ -110,10 +112,12 @@
 }
 .rec-cards-detail h3{
     font-size: 14px;
+    margin:8px 0;
 }
 .rec-cards-detail h6{
     font-size: 12px;
     color:#aba1ba;
+    font-family: "NEXON Lv1 Gothic OTF Light";;
 }
 .rec-login-card{
     width:465px;
@@ -163,6 +167,7 @@
     margin: 10px 0px;
     font-size: 13px;
     color:#aba1ba;
+    font-family: "NEXON Lv1 Gothic OTF Light";
 }
 .rec-login-lists li{
     padding-left: 10px;
@@ -180,6 +185,7 @@
 .rec-service span{
     margin-right: 20px;
     cursor:pointer;
+    font-family: "NEXON Lv1 Gothic OTF Light";
 }
 /* 전체게임 */
 .game-all{
@@ -192,14 +198,14 @@
     height:auto;
 }
 .all-title-title{
-    font-size: 25px;
+    font-size: 24px;
     margin-right: 15px;
 }
 .all-title-container button{
     color:#aba1ba;
     border:2px solid #aba1ba;
     background-color: white;
-    width:30px; height:30px;
+    width:26px; height:26px;
     font-size: 10px;
     cursor: pointer;
 }
@@ -235,16 +241,19 @@
 }
 .all-tag{
     width:100%;
-    padding:25px 25px;
-    background-color: white;
+    padding: 20px 30px 3px;
+    margin: 29px 24px 20px 0;
+    background-color: #fff;
     color:#737881;
     display:flex;
-    margin-top: 5px;
     white-space: nowrap;
 }
 .all-tag input[type="radio"]{
     visibility: hidden;
-    
+}
+.all-tag label{
+    font-family: "NEXON Lv1 Gothic OTF Light";
+    font-size: 100%;
 }
 .all-pc-title{
     margin-top: 60px;
@@ -280,6 +289,7 @@
     .rec-cards{
         width:250px;
         height:300px;
+        margin-bottom: 10px;
     }
     .all-pc-card{
         width:200px;height:260px;

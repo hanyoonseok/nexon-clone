@@ -10,7 +10,7 @@ export default function Footer(){
                     <i class="fab fa-youtube"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-facebook-f"></i>
-                    </div>
+                </div>
             </div>
             <div className="foot">
                 <div>
