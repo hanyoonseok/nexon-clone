@@ -82,9 +82,13 @@
     cursor:pointer;
 }
 .sidebar-mid{
-    padding:75px 0 50px 42px;
-    overflow-y:scroll;
+    padding:26px 40px 0px 40px;
     height:460px;
+    overflow: auto;
+    visibility: hidden;
+}
+.sidebar-mid-title, .sidebar-mid-games, .sidebar-mid:hover, .sidebar-mid:focus{
+    visibility: visible;
 }
 .sidebar-mid-title{
     display:flex;
@@ -115,6 +119,14 @@
 .game-list h3{
     padding-top: 24px;;
     height:50px;
+    color:#17191d;
+    font-size: 12px;
+}
+.game-list li{
+    min-height: 24px;
+    padding-bottom: 8px;
+    color:#737881;
+    font-size: 12px;
 }
 .sidebar-bottom{
     position:absolute;
