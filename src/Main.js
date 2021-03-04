@@ -49,56 +49,67 @@ export default function Main(){
                             <span></span>
                             <div className="slide-btn-title">크레이지 아케이드</div>
                             <div className="slide-btn-detail">나비 커플링 만들기</div>
+                            <nav></nav>
                         </SwiperSlide>
                         <SwiperSlide className="slide-card">
                             <span></span>
                             <div className="slide-btn-title">카운터스트라이크 온라인</div>
                             <div className="slide-btn-detail">천상의 에픽 무기 '디바인 블래스터'</div>
+                            <nav></nav>
                         </SwiperSlide>
                         <SwiperSlide className="slide-card">
                             <span></span>
                             <div className="slide-btn-title">메이플스토리</div>
                             <div className="slide-btn-detail">신규지역 호텔 아르크스</div>
+                            <nav></nav>
                         </SwiperSlide>
                         <SwiperSlide className="slide-card">
                             <span></span>
                             <div className="slide-btn-title">카트라이더 러쉬플러스</div>
                             <div className="slide-btn-detail">카러플|포르쉐 타이칸 등장!</div>
+                            <nav></nav>
                         </SwiperSlide>
                         <SwiperSlide className="slide-card">
                             <span></span>
                             <div className="slide-btn-title">EA SPORTS FIFA ONLINE 4</div>
                             <div className="slide-btn-detail">21 TOTY 출시</div>
+                            <nav></nav>
                         </SwiperSlide>
                         <SwiperSlide className="slide-card">
                             <span></span>
                             <div className="slide-btn-title">마비노기</div>
                             <div className="slide-btn-detail">전투 콘텐츠 UP데이트</div>
+                            <nav></nav>
                         </SwiperSlide>
                         <SwiperSlide className="slide-card">
                             <span></span>
                             <div className="slide-btn-title">넥슨</div>
                             <div className="slide-btn-detail">넥슨 보안 캠페인</div>
+                            <nav></nav>
                         </SwiperSlide>
                         <SwiperSlide className="slide-card">
                             <span></span>
                             <div className="slide-btn-title">사이퍼즈</div>
                             <div className="slide-btn-detail">신축년 설 이벤트</div>
+                            <nav></nav>
                         </SwiperSlide>
                         <SwiperSlide className="slide-card">
                             <span></span>
                             <div className="slide-btn-title">테일즈 위버</div>
                             <div className="slide-btn-detail">신축년 소.확.행 이벤트!</div>
+                            <nav></nav>
                         </SwiperSlide>
                         <SwiperSlide className="slide-card">
                             <span></span>
                             <div className="slide-btn-title">천애명월도</div>
                             <div className="slide-btn-detail">천애명월도 절대쌍교 이벤트</div>
+                            <nav></nav>
                         </SwiperSlide>
                         <SwiperSlide className="slide-card">
                             <span></span>
                             <div className="slide-btn-title">카운터 사이드</div>
                             <div className="slide-btn-detail">카운터 사이드 1주년</div>
+                            <nav></nav>
                         </SwiperSlide>
                     </Swiper>
                 </div>
