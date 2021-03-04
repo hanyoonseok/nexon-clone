@@ -14,6 +14,7 @@ SwiperCore.use([Navigation, Pagination, Autoplay]);
 export default function Main(){
     const [Mode, setMode] =useState(true);
     const [imgNum, setImgNum]=useState(1);
+    var num=1;
     function cardmode(){
         setMode(true);
     }
@@ -21,9 +22,12 @@ export default function Main(){
         setMode(false);
     }
     function slideChange(){
-        if(imgNum===10)
-        {setImgNum(0);}
-        setImgNum(imgNum=>imgNum+1);
+        if(num===10)
+        {setImgNum(1);num=1;}
+        else{
+            num++;
+            setImgNum(imgNum=>imgNum+1);
+        }
     }
     return(
         <div className="main-container">
