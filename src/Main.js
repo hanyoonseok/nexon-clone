@@ -5,7 +5,7 @@ import CardMode from './CardMode'
 import ListMode from './ListMode'
 import MCardMode from './MCardMode'
 import MListMode from './MListMode'
-import './css/Slider.css'
+import './css/Swipers.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {Navigation, Pagination, Autoplay} from 'swiper';
 import 'swiper/swiper-bundle.css'
@@ -13,26 +13,33 @@ import 'swiper/swiper-bundle.css'
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 export default function Main(){
     const [Mode, setMode] =useState(true);
+    const [imgNum, setImgNum]=useState(1);
     function cardmode(){
         setMode(true);
     }
     function listmode(){
         setMode(false);
     }
+    function slideChange(){
+        if(imgNum===10)
+        {setImgNum(0);}
+        setImgNum(imgNum=>imgNum+1);
+    }
     return(
         <div className="main-container">
-            <div className="main-screen">
+            <div className="main-screen" style={{backgroundImage:`url(./sources/background/${imgNum}.jpg)`}}>
                 <div className="main-screen-youtube">
                     <Tube/>
                 </div>
-                <div className="main-screen-btns">
+                <div className="main-screen-swiper">
                     <Swiper
                     spaceBetween={2}
                     slidesPerView={5}
                     followFinger={false}
                     loop={true}
                     navigation
-                    autoplay={{delay:2000, disableOnInteraction:false}}
+                    onSlideChange={slideChange}
+                    autoplay={{delay:5000, disableOnInteraction:false}}
                     >
                         <SwiperSlide className="slide-card">
                             <span></span>

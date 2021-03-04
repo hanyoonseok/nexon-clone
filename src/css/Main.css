@@ -4,7 +4,7 @@
 
 .main-screen{
     position:relative;
-    background-image: url("../sources/main.jpg");
+    /* background-image: url("../sources/main.jpg"); */
     background-repeat:no-repeat;
     background-size:cover; 
     height:450px;
@@ -14,7 +14,7 @@
     top:13%;
     right:17%;
 }
-.main-screen-btns{
+.main-screen-swiper{
     padding:0px 120px;
     position:absolute;
     width:100%;
@@ -276,7 +276,7 @@
     .main-screen-youtube{
         right:10%;
     }
-    .main-screen-btns{
+    .main-screen-swiper{
         padding:0 10px;
     }
     .rec-cards-list{
